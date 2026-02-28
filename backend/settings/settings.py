@@ -123,3 +123,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+CORS_ALLOW_ALL_ORIGINS = True
