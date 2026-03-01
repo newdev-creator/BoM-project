@@ -1,0 +1,10 @@
+# Ignore common large or irrelevant directories
+backend/.venv/
+backend/.idea/
+backend/.env/
+backend/__pycache__/
+backend/migrations/
+frontent/node_modules/
+frontent/.idea/
+frontent/dist/
+.git/
