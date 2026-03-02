@@ -28,7 +28,6 @@ This project is a Bill of Materials (BoM) management system with a Django/DRF ba
   - State management and data fetching should align with React 19 standards.
 
 ## Mandates & Constraints
-- **Path Sensitivity**: Always use `frontent/` (not `frontend/`) when referencing frontend files.
 - **Package Managers**: Do not use `pip` or `npm`/`yarn` directly. Stick to `uv` and `pnpm`.
 - **API Consistency**: Maintain the current DRF patterns for new endpoints unless a refactor to Class-Based Views is explicitly requested.
 - **Component Design**: New UI components should be added via Shadcn CLI or follow the existing Tailwind/Radix patterns in `frontent/src/components/ui`.
