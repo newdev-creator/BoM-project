@@ -4,7 +4,7 @@ This project is a Bill of Materials (BoM) management system with a Django/DRF ba
 
 ## Project Structure
 - `backend/`: Django 6.0.2 + Django REST Framework.
-- `frontent/`: React 19 + TypeScript + Vite + Tailwind CSS + Shadcn UI. (**Note**: The directory is named `frontent` with a 't' at the end).
+- `frontend/`: React 19 + TypeScript + Vite + Tailwind CSS + Shadcn UI.
 
 ## Tech Stack & Tooling
 - **Backend Dependency Management**: Use `uv`.
