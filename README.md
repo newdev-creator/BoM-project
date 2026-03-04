@@ -9,54 +9,26 @@ This project is a management system for Bill of Materials (BoM), featuring a rob
 - **Database**: PostgreSQL (configured via environment variables)
 - **Dependency Management**: [uv](https://github.com/astral-sh/uv) (Backend) and [pnpm](https://pnpm.io/) (Frontend)
 
-## Prerequisites
-
-- Python 3.13+
-- Node.js 20+
-- `uv` installed (`pip install uv` or via standalone installer)
-- `pnpm` installed (`npm install -g pnpm`)
-
 ## Getting Started
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone git@github.com:newdev-creator/BoM-project.git
 cd BoM-project
 ```
 
 ### 2. Environment Setup
-Create a `.env` file in the root and/or the `backend` directory based on `.env.dist`:
+Create a `.env` file in the root and the `backend` directory based on `.env.dist`:
 ```bash
 cp .env.dist .env
 # Edit .env and provide your MISTRAL_API_KEY and database credentials
 ```
 
-### 3. Backend Initialization
+### 3. Run Docker
 ```bash
-cd backend
-# Install dependencies
-uv sync
-
-# Run migrations
-uv run manage.py migrate
-
-# Seed the database with initial BoM data
-uv run manage.py seed_bom
-
-# Start the development server
-uv run manage.py runserver
+docker compose up --build
 ```
 The API will be available at `http://localhost:8000`.
-
-### 4. Frontend Initialization
-```bash
-cd ../frontend
-# Install dependencies
-pnpm install
-
-# Start the development server
-pnpm dev
-```
 The application will be accessible at `http://localhost:5173`.
 
 ## Features
